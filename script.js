@@ -1,7 +1,7 @@
 // Supabase-Verbindung
 const SUPABASE_URL = "https://clarmtdbguledewscalk.supabase.co";
 const SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNsYXJtdGRiZ3VsZWRld3NjYWxrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyNjIwMjUsImV4cCI6MjA1NTgzODAyNX0.5kSb9k10OV2OwUjD66-FanBHLY5uOsZHx9abg2qXMfo";
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Globaler Punktestand
 let score = 0;
