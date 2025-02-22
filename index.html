@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pool-Billard 14.1 Trainer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Pool-Billard 14.1 Trainer</h1>
+
+        <div class="scoreboard">
+            <h2>Punkte: <span id="score">0</span></h2>
+            <button class="btn add" onclick="addPoints(14)">+14</button>
+        </div>
+
+        <div class="controls">
+            <button class="btn foul" onclick="endRun('Foul')">Foul</button>
+            <button class="btn miss" onclick="endRun('Daneben geschossen')">Daneben geschossen</button>
+        </div>
+
+        <h2>Vergangene Läufe</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Punkte</th>
+                    <th>Grund</th>
+                    <th>Datum</th>
+                </tr>
+            </thead>
+            <tbody id="runHistory"></tbody>
+        </table>
+    </div>
+
+    <button class="btn reset" onclick="resetHistory()">Tabelle zurücksetzen</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+    padding: 20px;
+    /* background: #2c2c2c; */
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+.scoreboard {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.btn {
+    margin: 5px 0;
+    color: white;
+}
+
+.add {
+    background: #28a745;
+}
+
+.add:hover {
+    background: #218838;
+}
+
+.foul {
+    background: #dc3545;
+}
+
+.foul:hover {
+    background: #c82333;
+}
+
+.miss {
+    background: #ff9800;
+}
+
+.miss:hover {
+    background: #e68900;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    background: #333;
+}
+
+tr:hover {
+    background: #444;
+}
+
+/* Reset-Button unten */
+.reset {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff4444;
+    color: white;
+    padding: 10px 16px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 80%;
+    max-width: 300px;
+}
+
+.reset:hover {
+    background: #cc0000;
+}
+
+/* Besseres Layout für kleine Displays */
+@media (min-width: 600px) {
+    .container {
+        max-width: 500px;
+    }
+
+    .controls {
+        flex-direction: row;
+    }
+
+    button {
+        width: auto;
+    }
+}
